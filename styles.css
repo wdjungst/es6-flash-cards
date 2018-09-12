@@ -1,0 +1,31 @@
+.animate {
+    -moz-animation: spinHorizontal .8s linear;
+    -o-animation: spinHorizontal .8s linear;    
+    -webkit-animation: spinHorizontal .8s linear;
+    animation: spinHorizontal .8s linear;
+}
+
+.content-animate {
+  -moz-animation: showContent 1s ease 1 normal;
+  -o-animation: showContent 1s ease 1 normal;
+  -webkit-animation: showContent 1s ease 1 normal;
+  animation: showContent 1s ease 1 normal;
+
+}
+
+@keyframes spinHorizontal {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(180deg); }
+}
+
+@keyframes showContent {
+  0% { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.card-action {
+  display: flex;
+}
+
+
